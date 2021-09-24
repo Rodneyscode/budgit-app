@@ -1,0 +1,71 @@
+{% extends "main_page.html" %}
+
+{% block userprofilehome %}
+
+<h1>profile page</h1>
+
+<h3> this is {{user.username}}, Welcome to my profile page </h3>
+
+
+	
+	{% if rr.0 == none %}
+		{{blank}}
+	{% else %}
+		<p>
+			<a href="{% url 'firststash' %}">{{rr.0}}</a>
+		</p>
+	{%endif%}
+
+	{% if rr.1 == none %}
+		{{blank}}
+	{% else %}
+		<p>
+			<a href="{% url 'secondstash' %}">{{rr.1}}</a>
+		</p>
+	{%endif%}
+
+	{% if rr.2 == none %}
+		{{blank}}
+	{% else %}
+		<p>
+			<a href="{% url 'thirdstash' %}">{{rr.2}}</a>
+		</p>
+	{%endif%}
+
+	{% if rr.3 == none %}
+		{{blank}}
+	{% else %}
+		<p>
+			<a href="{% url 'fourthstash' %}">{{rr.3}}</a>
+		</p>
+	{%endif%}
+
+	{% if rr.4 == none %}
+		{{blank}}
+	{% else %}
+		<p>
+			<a href="{% url 'fifthstash' %}">{{rr.4}}</a>
+		</p>
+	{%endif%}
+
+
+
+looky here
+
+
+{% endblock userprofilehome %}
+<!-- {% for stuff in rr %}
+	{% if peeps == stuff.theuser %}
+
+		<ul>
+			<li>
+				<a href="">{{stuff}}</a>
+			</li>
+		</ul>
+			
+		
+
+	{%endif%}
+{%endfor%}
+
+ -->

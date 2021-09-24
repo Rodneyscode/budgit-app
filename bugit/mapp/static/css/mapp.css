@@ -1,0 +1,10 @@
+.navbar {
+	color: red;
+	background-color: #71eb34 !important;
+}
+
+
+#signin {
+	float: right !important;
+	color: red !important;
+}

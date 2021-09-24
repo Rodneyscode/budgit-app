@@ -1,0 +1,13 @@
+{% extends "main_page.html" %}
+
+{% block userprofilehome %}
+
+<h1>Transactions</h1>
+{% for x in tt %}
+
+<p>
+|{{x.theuser}}|--|{{x.name_of_stash}}|--|{{x.amount_of_stash}}|--|{{x.date}}|
+</p>
+{% endfor %}
+
+{% endblock userprofilehome %}

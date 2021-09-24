@@ -1,0 +1,52 @@
+{% extends "main_page.html" %}
+
+{% block userprofilehome %}
+
+<h1> Edit your stashes</h1>
+
+
+	
+	{% if rr.0 == none %}
+		{{blank}}
+	{% else %}
+		<p>
+			{{rr.0}}
+		</p>
+	{%endif%}
+
+	{% if rr.1 == none %}
+		{{blank}}
+	{% else %}
+		<p>
+			{{rr.1}}
+		</p>
+	{%endif%}
+
+	{% if rr.2 == none %}
+		{{blank}}
+	{% else %}
+		<p>
+			{{rr.2}}
+		</p>
+	{%endif%}
+
+	{% if rr.3 == none %}
+		{{blank}}
+	{% else %}
+		<p>
+			{{rr.3}}
+		</p>
+	{%endif%}
+
+	{% if rr.4 == none %}
+		{{blank}}
+	{% else %}
+		<p>
+			{{rr.4}}
+		</p>
+	{%endif%}
+
+
+
+
+{% endblock userprofilehome %}

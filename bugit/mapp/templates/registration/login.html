@@ -1,0 +1,28 @@
+{% extends "main_page.html" %}
+
+{% block userprofilehome %}
+
+<h1>forms with the help of djangooo!!</h1>
+
+<form method="post" action="{% url 'login' %}">
+	{% csrf_token %}
+
+	{% if form.errors %}
+		this wont work my friend
+	{%endif%}
+
+
+	<p>username::{{ form.username}}</p>
+	<p>password::{{ form.password}}</p>
+
+
+	<input type="submit" value="lets goo">
+
+
+
+</form>
+
+{% endblock userprofilehome %}
+
+
+	

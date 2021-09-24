@@ -1,0 +1,17 @@
+{% extends "main_page.html" %}
+
+{% block userprofilehome %}
+
+<h1>Register for an account at budgit!</h1>
+
+
+<form method="POST">
+	{% csrf_token %}
+
+	{{regform.as_p}}
+
+	<button> try it!!</button>
+</form>
+
+{% endblock userprofilehome %}
+
